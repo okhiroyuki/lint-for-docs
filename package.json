@@ -1,0 +1,19 @@
+{
+  "name": "lint-for-docs",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "lint": "npx markdownlint-cli2 './docs/*.md' & npx textlint 'docs/**'",
+    "fix": "npx markdownlint-cli2 './docs/*.md' --fix & npx textlint 'docs/**' --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "markdownlint-cli2": "0.9.2",
+    "textlint": "^13.3.3"
+  }
+}
