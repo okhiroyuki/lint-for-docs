@@ -14,7 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "@textlint/textlint-plugin-markdown": "13.3.3",
-    "markdownlint-cli2": "0.9.2",
+    "markdownlint-cli2": "0.10.0",
     "textlint": "13.3.3",
     "textlint-filter-rule-allowlist": "4.0.0",
     "textlint-filter-rule-comments": "1.2.2",
