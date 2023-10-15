@@ -3,8 +3,6 @@
   "extends": [
     "config:base",
     ":enablePreCommit",
-    ":prHourlyLimitNone",
-    ":prConcurrentLimitNone",
     ":timezone(Asia/Tokyo)"
   ],
   "rangeStrategy": "pin",
@@ -15,7 +13,6 @@
     "enabled": true,
     "automerge": true
   },
-  "automergeSchedule": ["before 2am"],
   "packageRules": [
     {
       "automerge": true,
@@ -24,8 +21,6 @@
     {
       "automerge": true,
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "stabilityDays": 3,
-      "prCreation": "not-pending"
     }
   ]
 }
