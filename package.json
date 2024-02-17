@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@textlint/textlint-plugin-markdown": "13.4.1",
+    "@textlint/textlint-plugin-markdown": "14.0.3",
     "markdownlint-cli2": "0.12.1",
     "textlint": "13.4.1",
     "textlint-filter-rule-allowlist": "4.0.0",
