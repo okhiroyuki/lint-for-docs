@@ -1,0 +1,24 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+    "name": "Debian",
+    // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/node:1": {}
+    },
+    "runArgs": [
+        "--env-file",
+        "${localWorkspaceFolder}/.devcontainer/.env.devcontainer"
+    ],
+    "initializeCommand": "bash .devcontainer/commands/initialize.sh",
+    "postAttachCommand": "bash .devcontainer/commands/post-attach.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "MermaidChart.vscode-mermaid-chart"
+            ]
+        }
+    }
+}
