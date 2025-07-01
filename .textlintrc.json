@@ -1,13 +1,16 @@
 {
   "plugins": {
     "@textlint/markdown": {
-      "extensions": [".md"]
+      "extensions": [
+        ".md"
+      ]
     }
   },
   "filters": {
     "comments": true
   },
   "rules": {
-    "preset-ja-technical-writing": true
+    "preset-ja-technical-writing": true,
+    "@textlint-ja/preset-ai-writing": true
   }
 }

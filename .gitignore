@@ -145,3 +145,5 @@ dist
 
 # ignore docs folder
 docs/
+
+.env.devcontainer
